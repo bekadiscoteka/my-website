@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form</title>
+</head>
+<body>
+    <form id="myForm">
+        <label for="title">Title:</label><br>
+        <input type="text" id="title" name="title"><br>
+        <label for="description">Description:</label><br>
+        <input type="text" id="description" name="description"><br><br>
+        <button type="button" onclick="addItem()">Add to the list</button>
+        <button type="button" onclick="clearList()">Clear the list</button>
+    </form>
+
+    <ul id="list"></ul>
+
+    <script>
+        let itemsList = [];
+
+        function addItem() {
+            let titleInput = document.getElementById("title").value;
+            let descriptionInput = document.getElementById("description").value;
+            itemsList.push({ title: titleInput, description: descriptionInput });
+            displayList();
+        }
+
+        function clearList() {
+            itemsList = [];
+            displayList();
+        }
+
+        function displayList() {
+            let itemList = document.getElementById("list");
+            itemList.innerHTML = "";
+            for (let i = 0; i < itemsList.length; i++) {
+                let item = itemsList[i];
+                let listItem = document.createElement("li");
+                listItem.appendChild(document.createTextNode(item.title + ": " + item.description));
+                itemList.appendChild(listItem);
+            }
+        }
+    </script>
+</body>
+</html>

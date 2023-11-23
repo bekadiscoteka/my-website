@@ -1,0 +1,173 @@
+.special-offer-card {
+    transition: transform 0.2s ease-in-out;
+}
+
+.special-offer-card:hover {
+    transform: scale(1.05);
+}
+
+/* styles.css */
+
+.news-card {
+    transition: transform 0.2s ease-in-out;/* Adjust the font size as needed */
+}
+
+.news-card:hover {
+    transform: scale(0.95);
+}
+
+/* Change color of carousel control arrows to black */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(100%);
+}
+
+/* styles.css */
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    padding-left: 20px; /* Adjust the left padding as needed */
+    padding-right: 20px;
+}
+
+.navbar {
+    background-color: #333;
+    padding: 20px;
+    transition: padding 0.2s ease; /* Transition for padding */
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-header {
+    font-size: 36px;
+    color: #d6ba73;
+}
+
+.navbar-nav {
+    list-style: none;
+    display: flex;
+}
+
+.navbar-nav li {
+    margin-right: 20px;
+}
+
+.navbar-nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.banner {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+/* Increase padding on hover for the navbar */
+.navbar:hover {
+    padding: 30px;
+}
+
+/* Add this CSS to your styles.css file */
+
+
+.special-offers-container {
+    padding-left: 200px; /* Adjust the left padding as needed */
+    padding-right: 200px; /* Adjust the right padding as needed */
+    
+}
+
+
+  
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=devanagari,latin-ext");
+
+
+
+.cardd {
+  border-radius: 10px;
+  filter: drop-shadow(0 5px 10px 0 #ffffff);
+  width: 400px;
+  height: 180px;
+  background-color: #ffffff;
+  padding: 20px;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  transition: 0.6s ease-in;
+
+}
+
+
+
+.cardd::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -15px;
+  right: -15px;
+  background: #7952b3;
+  height:220px;
+  width: 25px;
+  border-radius: 32px;
+  transform: scale(1);
+  transform-origin: 50% 50%;
+  transition: transform 0.25s ease-out;
+}
+
+.cardd:hover::before{
+    transition-delay:0.2s ;
+
+  transform: scale(40);
+}
+
+.cardd:hover{
+    color: #ffffff;
+
+}
+
+.cardd p{
+    padding: 10px 0;
+}
+
+.container mt-4 {
+    padding-left: 200px;
+    padding-right: 220px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+
+
+
+    /* Add custom styles if needed */
+    .center-item {
+        width: 100px;
+        height: 50px;
+        background-color: lightblue;
+        margin: 5px; /* Adjust the margin as needed */
+      }

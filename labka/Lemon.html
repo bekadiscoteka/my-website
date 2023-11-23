@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favic.png" />
+    <link rel="icon" type="image/png" href="img/favic.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Details</title>
+    <!-- Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="your-correct-integrity-value" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="padding-left: 150px; padding-top: 30px;">
+        <a class="navbar-brand" href="#"><i class="fa fa-utensils"></i> BekaFood</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link"  href="main.html"><i class="fas fa-home"></i> Home </a>
+                </li>
+                <li class="nav-item">
+                    <a id="scrollButton" class="nav-link"href="menu.html"><i class="fas fa-bars"></i>
+                       Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="main.html"><i class="fas fa-bullhorn"></i> News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutus.html"><i class="fas fa-info-circle"></i>
+                       About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="help.html"><i class="fas fa-question-circle"></i>
+                       Help</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+<div class="container mt-5">
+    <!-- Food Details Section -->
+    <div class="row">
+        <div class="col-md-6">
+            <img src="img/lemoncc.webp" alt="Food Image" class="img-fluid">
+        </div>
+        <div class="col-md-6">
+            <h2>Lemon Cake</h2>
+            <p>Description of the food. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id augue sed nisi ultrices condimentum.</p>
+            <p><strong>Price: $10.99</strong></p>
+            <!-- Order Form -->
+            <form id="orderForm">
+                <div class="form-group">
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" class="form-control" id="quantity" placeholder="Enter quantity" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Delivery Address:</label>
+                    <textarea class="form-control" id="address" rows="3" placeholder="Enter your address" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Order Now</button>
+            </form>
+            <!-- Order Confirmation Message -->
+            <div id="confirmationMessage" class="mt-3"></div>
+        </div>
+    </div>
+
+    <!-- Additional Information Section -->
+    <div class="row mt-5">
+        <div class="col-md-12">
+            <h3>Additional Information</h3>
+            <ul>
+                <li>Ingredients: Ingredient 1, Ingredient 2, Ingredient 3</li>
+                <li>Calories: 500 kcal</li>
+                <li>Delivery Time: 30 minutes</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS and Popper.js (Optional) -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script>
+    // JavaScript to handle form submission and display confirmation message
+    document.getElementById('orderForm').addEventListener('submit', function (event) {
+        event.preventDefault();
+        
+        // Simulate order processing (you may replace this with actual backend processing)
+        setTimeout(function() {
+            document.getElementById('confirmationMessage').innerHTML = '<div class="alert alert-success" role="alert">Order successfully placed! Thank you for ordering.</div>';
+        }, 1000); // Simulating a delay for processing (1 second)
+    });
+</script>
+
+<br>
+<div style="padding-left: 150px;">
+    <a href="menu.html" class="btn btn-primary">Back to Menu</a>
+</div>
+<br>
+<hr>
+
+<footer>
+
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              Any issues? Open this section to leave feedback
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+                <div class="container mt-5">
+                    <div class="row justify-content-center">
+                        <div class="col-md-6">
+            
+                            <form id="feedbackForm">
+                                <h2 class="text-center mb-4">Report an Issue</h2>
+                            
+                                <!-- Issues Section -->
+                                <div class="form-group">
+                                  <label for="issues">Issues:</label>
+                                  <textarea class="form-control" id="issues" name="issues" rows="3" required></textarea>
+                                </div>
+                            
+                                <!-- Email Section -->
+                                <div class="form-group">
+                                  <label for="email">Your Email:</label>
+                                  <input type="email" class="form-control" id="email" name="email" required>
+                                  <small class="form-text text-muted">We'll respond to this email.</small>
+                                </div>
+                            
+                                <!-- Submit Button -->
+                                <button type="button" class="btn btn-primary btn-block" id="submitButton">Submit Issue</button>
+                              </form>
+                            
+                              <!-- Submission Message -->
+                              <div class="mt-4" id="submissionMessage" style="display: none;">
+                                <div class="alert alert-success" role="alert">
+                                  Issue submitted successfully! We'll get back to you soon.
+                                </div>
+                              </div>
+                            
+                              <script>
+                                $(document).ready(function () {
+                                  // Create a Howl sound object for order confirmation
+                                  const orderConfirmationSound = new Howl({
+                                    src: ['img/succ.mp3'],
+                                  });
+                            
+                                  $("#submitButton").click(function () {
+                                    // Add your form submission logic here (e.g., using Ajax to send data to the server)
+                            
+                                    // Play the order confirmation sound
+                                    orderConfirmationSound.play();
+                            
+                                    // Display submission message
+                                    $("#submissionMessage").show();
+                                  });
+                                });
+                              </script>
+                               <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+                               <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
+                            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+                            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-qjsm+JPUzPHvQv8Vu+hvi2I9FjNvuXWJ8w6f/6pOjlj5moq3uYKs6U8Z+cX2t2Wt" crossorigin="anonymous"></script>
+                            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WyPIRPz4Jl0tsoSk2J8Rkk2FqnV9WW/sr" crossorigin="anonymous"></script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              Contact the developer
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample" style="padding-left: 200px; padding-right: 200px;">
+            <div class="accordion-body">
+                <div class="container mt-5" style="background-color: #F2F4CD;">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2 style="color: black;">Meet the Developer</h2>
+                            <p>If you want to contact the developer and know information about him, meet, here is the social networks that Yerman Bekzat is using </p>
+                
+                            <div class="social-links">
+                                <a href="https://www.instagram.com/yermanbekzat" target="_blank" class="btn btn-primary btn-lg mr-2">
+                                     Instagram
+                                </a>
+                
+                                <a href="https://t.me/viaBeka" target="_blank" class="btn btn-info btn-lg">
+                                     Telegram
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <!-- Developer's image or avatar can be placed here -->
+                            <img src="img/photo_2023-02-25_22-39-40.jpg" alt="Developer's Avatar" class="img-fluid" style="width:100%;max-width:300px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+      <br>
+    <h4>Copyright © Yerman Bekzat</h4>
+</footer>
+</body>
+</html>
+
